@@ -1,4 +1,4 @@
 #simple houre calculator
 hours=2
-seconds= hours * 3600
+seconds = hours * 3600
 print(hours, " hour(s) is ", seconds, " seconds")
