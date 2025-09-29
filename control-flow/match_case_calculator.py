@@ -1,24 +1,22 @@
-# match case calculator
-
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 opr = input("Choose the operation (+, -, *, /): ")
-result =0
 
+# Make sure to use 'match opr:' exactly
 match opr:
     case "+":
-        result = num1 + num2    
+        result = num1 + num2
     case "-":
         result = num1 - num2
     case "*":
         result = num1 * num2
-    case "/":   
+    case "/":
         if num2 == 0:
-            print("Cannot divide by zero.") 
-            exit() 
+            print("Cannot divide by zero.")
+            exit()
         result = num1 / num2
     case _:
-        print("invalid Oprator")
+        print("Invalid operator.")
         exit()
+
 print(f"The result is {result}")
-    
