@@ -16,7 +16,7 @@ def main():
         if choice == '1':
             # Prompt for and add an item
             item = input("Enter Item Name to Add: ")
-            shopping_list.append(input(item))
+            shopping_list.append(item)
         elif choice == '2':
             # Prompt for and remove an item
             item = input("Enter Item Name to Delete: ")
